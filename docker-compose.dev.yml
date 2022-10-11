@@ -1,0 +1,14 @@
+services:
+    next-app:
+        container_name: next-app
+        build:
+            context: ./
+            dockerfile: ./.docker/Dockerfile.dev
+            args:
+                BACKEND_URL: ${BACKEND_URL}
+        restart: always
+        volumes:
+            - ./src:/app/src
+            - ./public:/app/public
+        ports:
+            - 3000:3000
