@@ -1,5 +1,4 @@
-import { ArrowBack } from "@mui/icons-material";
-import { Paper, Typography, Link } from "@mui/material";
+import { Paper, Typography, Link, Grid } from "@mui/material";
 import LoginForm from "./LoginForm";
 
 export default function LoginCard() 
@@ -25,26 +24,33 @@ export default function LoginCard()
             
             <LoginForm />
 
-            <Link href="#" marginTop={2} sx={{ textDecoration: 'none'}}>                
-                <ArrowBack 
-                fontSize="inherit"
-                sx={{
-                    position: "relative",
-                    bottom: "-3px"
-                }}
-                />
+            <Grid 
+            container 
+            justifyContent="center"
+            alignItems="center"
+            flexDirection="column"
+            rowGap="5px"
+            >
+                <Link href="#">
+                    <Typography 
+                    display="inline"
+                    variant="body1" 
+                    color="initial"
+                    >
+                        Forgot password?
+                    </Typography>
+                </Link>
 
-                <Typography 
-                display="inline"
-                variant="body2" 
-                color="initial" 
-                letterSpacing="1px"
-                marginLeft="5px"
-                >
-                    Forgot password?
-                </Typography>
-            </Link>
-
+                <Link href="#">       
+                    <Typography 
+                    display="inline"
+                    variant="body1" 
+                    color="initial" 
+                    >
+                        Sign Up
+                    </Typography>
+                </Link>
+            </Grid>
         </Paper>
     );
 }
