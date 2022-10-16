@@ -1,6 +1,7 @@
 import { Grid } from "@mui/material";
 
-export default function LoginLayout({ children }) {
+export default function LoginLayout({ children }) 
+{
     return (
         <Grid
         container
