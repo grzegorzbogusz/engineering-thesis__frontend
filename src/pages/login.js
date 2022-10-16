@@ -1,13 +1,11 @@
-import GuestLayout from '../components/layouts/GuestLayout';
 import LoginCard from '../components/LoginCard';
+import LoginLayout from '../components/layouts/LoginLayout';
 
-export default function Login() {
-
+export default function Login() 
+{
     return (
-        <GuestLayout>
-            <LoginCard>
-
-            </LoginCard>
-        </GuestLayout>
+        <LoginLayout>
+            <LoginCard />
+        </LoginLayout>
     );
 }
