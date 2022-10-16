@@ -14,7 +14,7 @@ RUN \
 COPY src ./src
 COPY public ./public
 COPY next.config.js .
-COPY .env.example .env
+COPY .env.example .env.local
 
 ARG BACKEND_URL
 ENV BACKEND_URL=${BACKEND_URL}
