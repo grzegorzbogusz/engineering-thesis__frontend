@@ -1,11 +1,10 @@
-import Axios from 'axios';
+import axios from 'axios';
 
-const axios = Axios.create({
-    baseURL: process.env.BACKEND_URL,
+export default axios.create({
+    baseURL: 'http://localhost:8080/api',
     headers: {
-        'X-Requested-With': 'XMLHttpRequest',
+        'Content-Type': 'application/json',
+        'Accept': 'application/json',
     },
     withCredentials: false,
 });
-
-export default axios;
