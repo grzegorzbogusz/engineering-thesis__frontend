@@ -55,6 +55,7 @@ export default function LoginForm()
                 fullWidth
                 required
                 margin="normal"
+                inputProps={{ maxLength: 255 }}
                 />
 
                 { errors.email && (<FormError errors={errors.email} />) }

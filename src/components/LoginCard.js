@@ -26,25 +26,26 @@ export default function LoginCard()
 
             <Grid 
             container 
-            justifyContent="center"
+            justifyContent="space-between"
             alignItems="center"
-            flexDirection="column"
+            position={"relative"}
+            top={"-20px"}
             rowGap="5px"
             >
                 <Link href="#">
                     <Typography 
                     display="inline"
-                    variant="body1" 
+                    variant="body2" 
                     color="initial"
                     >
                         Forgot password?
                     </Typography>
                 </Link>
 
-                <Link href="#">       
+                <Link href="/register">       
                     <Typography 
                     display="inline"
-                    variant="body1" 
+                    variant="body2" 
                     color="initial" 
                     >
                         Sign Up
