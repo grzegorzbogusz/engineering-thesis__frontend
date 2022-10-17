@@ -29,7 +29,7 @@ export default function LoginForm()
                 router.push('/');
             })
             .catch(err => {
-                if(err.response.status === 422) {                    
+                if(err.response?.status === 422) {                    
                     setErrors({
                         email: err.response.data.email,
                         password: err.response.data.password
@@ -55,6 +55,7 @@ export default function LoginForm()
                 fullWidth
                 required
                 margin="normal"
+                inputProps={{ maxLength: 255 }}
                 />
 
                 { errors.email && (<FormError errors={errors.email} />) }

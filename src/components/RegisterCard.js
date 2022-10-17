@@ -1,7 +1,7 @@
-import { Paper, Typography, Link, Grid } from "@mui/material";
-import LoginForm from "./LoginForm";
+import { Paper, Typography, Grid, Link } from "@mui/material";
+import RegisterForm from "./RegisterForm";
 
-export default function LoginCard() 
+export default function RegisterCard()
 {
     return (
         <Paper elevation={10} sx={{
@@ -11,7 +11,7 @@ export default function LoginCard()
             borderRadius: "7px",
             flexGrow: "1"
         }}>
-            <Typography 
+            <Typography
             variant="h1" 
             color="#303030"
             fontSize="2.5rem"
@@ -19,36 +19,28 @@ export default function LoginCard()
             fontFamily="Segoe UI"
             textAlign="center"
             > 
-                Login 
+                Register 
             </Typography>
-            
-            <LoginForm />
 
-            <Grid 
+            <RegisterForm />
+              
+            <Grid
             container 
-            justifyContent="space-between"
+            justifyContent="center"
             alignItems="center"
-            position={"relative"}
-            top={"-20px"}
-            rowGap="5px"
+            flexDirection="column"
             >
-                <Link href="#">
-                    <Typography 
-                    display="inline"
-                    variant="body2" 
-                    color="initial"
-                    >
-                        Forgot password?
-                    </Typography>
-                </Link>
-
-                <Link href="/register">       
+                <Typography variant="body2" color="#696969">
+                    Already have an account?
+                </Typography>
+                
+                <Link href="/login">       
                     <Typography 
                     display="inline"
                     variant="body2" 
                     color="initial" 
                     >
-                        Sign Up
+                        Log In
                     </Typography>
                 </Link>
             </Grid>

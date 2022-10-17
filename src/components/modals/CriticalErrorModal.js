@@ -19,7 +19,7 @@ export default function CriticalErrorModal({openModal, setOpenModal})
           </DialogTitle>
           <DialogContent>
             <DialogContentText 
-            width="400px" 
+            maxWidth="400px" 
             >
                 <span> Something went wrong! </span>
                 <span> Please try again later... </span>
