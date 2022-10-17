@@ -5,7 +5,6 @@ export default function LoginLayout({ children })
     return (
         <Grid
         container
-        item
         height="100vh"
         alignItems={"center"}
         justifyContent={"center"}
