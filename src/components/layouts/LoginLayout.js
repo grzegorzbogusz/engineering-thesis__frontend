@@ -9,12 +9,6 @@ export default function LoginLayout({ children })
         alignItems={"center"}
         justifyContent={"center"}
         alignContent={"center"}
-        sx={{
-            backgroundImage: "url(/background.png)",
-            backgroundRepeat: "repeat",
-            backgroundColor: "#A57A2A",
-            backgroundPosition: "-10px 50px"
-        }}
         >
             { children }
         </Grid>
