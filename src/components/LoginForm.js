@@ -42,7 +42,7 @@ export default function LoginForm()
 
     return (
         <>
-            <form onSubmit={handleSubmit} style={{ width: "100%", margin: "30px 0" }}>
+            <form onSubmit={handleSubmit} style={{ width: "100%", margin: "30px 0 10px" }}>
 
                 <TextField
                 id="email"
