@@ -111,7 +111,7 @@ export default function RegisterForm()
                 variant="contained" 
                 color="primary"
                 fullWidth
-                sx={{ marginTop: "40px", height: "50px" }}
+                sx={{ marginTop: "40px", height: "40px" }}
                 >
                     Sign up
                 </Button>

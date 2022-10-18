@@ -80,7 +80,7 @@ export default function LoginForm()
                 variant="contained" 
                 color="primary"
                 fullWidth
-                sx={{ marginTop: "40px" }}
+                sx={{ marginTop: "40px", height: "40px" }}
                 >
                     Log in
                 </Button>

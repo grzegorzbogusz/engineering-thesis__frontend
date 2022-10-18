@@ -1,5 +1,6 @@
 import { Paper, Typography, Link, Grid } from "@mui/material";
 import LoginForm from "./LoginForm";
+import CardTitle from "./CardTitle";
 
 export default function LoginCard() 
 {
@@ -11,16 +12,7 @@ export default function LoginCard()
             borderRadius: "7px",
             flexGrow: "1"
         }}>
-            <Typography 
-            variant="h1" 
-            color="#303030"
-            fontSize="2.5rem"
-            fontWeight="bold"
-            fontFamily="Segoe UI"
-            textAlign="center"
-            > 
-                Login 
-            </Typography>
+            <CardTitle title="Login"/>
             
             <LoginForm />
 

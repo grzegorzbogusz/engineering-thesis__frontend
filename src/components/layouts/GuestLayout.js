@@ -1,12 +1,13 @@
-import Grid from '@mui/material/Grid'
-export default function RegisterLayout({ children })
+import { Grid } from "@mui/material";
+
+export default function GuestLayout({ children }) 
 {
     return (
         <Grid
         container
         height="100vh"
-        justifyContent={"center"}
         alignItems={"center"}
+        justifyContent={"center"}
         alignContent={"center"}
         >
             { children }
