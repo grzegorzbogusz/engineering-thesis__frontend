@@ -1,11 +1,11 @@
-import RegisterLayout from "../components/layouts/RegisterLayout";
+import GuestLayout from "../components/layouts/GuestLayout";
 import RegisterCard from "../components/RegisterCard";
 
 export default function Register()
 {
     return (
-        <RegisterLayout>
+        <GuestLayout>
             <RegisterCard />
-        </RegisterLayout>
+        </GuestLayout>
     );
 }
