@@ -20,11 +20,9 @@ export default function LoginCard()
             container 
             justifyContent="space-between"
             alignItems="center"
-            position={"relative"}
-            top={"-20px"}
             rowGap="5px"
             >
-                <Link href="#">
+                <Link href="/forgot-password">
                     <Typography 
                     display="inline"
                     variant="body2" 
