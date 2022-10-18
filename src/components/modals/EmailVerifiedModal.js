@@ -1,6 +1,6 @@
 import { Dialog, DialogTitle, DialogContent, DialogContentText, DialogActions, Button, Typography } from "@mui/material";
 
-export default function EmailVerified({ open, setOpen })
+export default function EmailVerifiedModal({ open, setOpen })
 {
     return (
         <Dialog open={open} aria-labelledby={"Email verified"}>
