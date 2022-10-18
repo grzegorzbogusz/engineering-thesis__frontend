@@ -1,9 +1,9 @@
 import { Dialog, DialogTitle, DialogContent, DialogContentText, DialogActions, Button, Typography } from "@mui/material";
 
-export default function EmailVerifiedModal({ open, setOpen })
+export default function EmailVerifiedModal({ openModal, setOpenModal })
 {
     return (
-        <Dialog open={open} aria-labelledby={"Email verified"}>
+        <Dialog open={openModal} aria-labelledby={"Email verified"}>
           <DialogTitle id={"emailVerified"}>
             <Typography 
             variant="h6" 
@@ -16,13 +16,14 @@ export default function EmailVerifiedModal({ open, setOpen })
           </DialogTitle>
           <DialogContent>
             <DialogContentText maxWidth="400px">
-                Email successfully verified
+                Enjoy using our service!
             </DialogContentText>
           </DialogContent>
           <DialogActions sx={{ display: "flex", justifyContent: "center"}}>
             <Button
-              onClick={() => setOpen(false)}
-              color="primary"
+              href="/"
+              onClick={() => setOpenModal(false)}
+              color="primary"   
               variant="outlined"
             >
               OK
